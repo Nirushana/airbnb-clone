@@ -1,0 +1,52 @@
+[debug] [2020-09-02T17:15:40.205Z] ----------------------------------------------------------------------
+[debug] [2020-09-02T17:15:40.212Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kavin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-09-02T17:15:40.212Z] CLI Version:   8.9.2
+[debug] [2020-09-02T17:15:40.213Z] Platform:      win32
+[debug] [2020-09-02T17:15:40.213Z] Node Version:  v12.16.3
+[debug] [2020-09-02T17:15:40.216Z] Time:          Wed Sep 02 2020 22:45:40 GMT+0530 (India Standard Time)
+[debug] [2020-09-02T17:15:40.217Z] ----------------------------------------------------------------------
+[debug] [2020-09-02T17:15:40.217Z] 
+[debug] [2020-09-02T17:15:40.237Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-02T17:15:40.238Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\kavin\OneDrive\Desktop\WEB dev\airbnb-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using airbnb-clone-3acff. 
+[debug] [2020-09-02T17:15:48.327Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/airbnb-clone-3acff  
+ 
+[debug] [2020-09-02T17:15:59.584Z] Server Error. getaddrinfo ENOTFOUND firebase.googleapis.com
+[debug] [2020-09-02T17:16:08.737Z] FirebaseError: Server Error. getaddrinfo ENOTFOUND firebase.googleapis.com
+    at Request._callback (C:\Users\kavin\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:32:31)
+    at self.callback (C:\Users\kavin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:310:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at Request.onRequestError (C:\Users\kavin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (events.js:322:22)
+    at ClientRequest.EventEmitter.emit (domain.js:482:12)
+    at TLSSocket.socketErrorListener (_http_client.js:426:9)
+    at TLSSocket.emit (events.js:310:20)
+    at TLSSocket.EventEmitter.emit (domain.js:482:12)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to get Firebase project airbnb-clone-3acff. Please make sure the project exists and your account has permission to access it.
